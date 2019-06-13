@@ -6,10 +6,6 @@ port(e: in std_logic_vector(5 downto 0);
 	  s: out std_logic_vector(7 downto 0)
 );
 end entity;
-
--- alterei para 6 bits a entrada "e" e add zeros a esquerda de todos
---vou precisar  mudar os bits da saida
-
 architecture biroliro of decodBCD is
 begin
 s <= "00000000" when e = "000000" else
